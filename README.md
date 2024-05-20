@@ -1,11 +1,23 @@
-# Usage Guide
+# Sky's the limit
 
-Start by selecting `Use this template` > `Create a new Repository` and setup a repository. Next clone the repository, and replace the information at the start of the `CMakeLists.txt` file.
+A really, really simple Minecraft Bedrock mod to increase the 
+maximum build limit in all dimensions to 2048 blocks.
 
-```cmake
-project(Amethyst-Template CXX ASM_NASM) # Replace `Amethyst-Template` with the name of your mod
-set(MOD_VERSION "0.1.0") # Replace this with the version number of your mod
-set(MOD_AUTHOR "FrederoxDev") # Replace this with your name
-```
+## Examples
 
-To build this, you need to have also build AmethystAPI seperately
+
+## Working Versions
+| Working | Version | Note                                             |
+|---------|---------|--------------------------------------------------|
+| No      | 1.20.81 | Not supported by the AmethystAPI                 |
+| Yes     | 1.20.80 | -                                                |
+| Yes     | 1.20.73 | -                                                |
+| Yes     | 1.20.72 | -                                                |
+| Yes     | 1.20.71 | Current officially supported version of Amethyst |
+
+## Credits
+All credits basically go to `duckos_mods`,
+he was the one who helped me and basically made this.
+
+This will be taken down once his mod for
+removing the piston push limit etc is finished.
