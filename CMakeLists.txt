@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 
 # Mod Options
-project(Amethyst-Template CXX ASM_NASM)
+project(SkysTheLimit CXX ASM_NASM)
 set(MOD_VERSION "0.1.0")
-set(MOD_AUTHOR "FrederoxDev")
+set(MOD_AUTHOR "Adrian8115")
 
 # Amethyst Minecraft Folder
 set(AmethystFolder "$ENV{localappdata}/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/AC/Amethyst/")
