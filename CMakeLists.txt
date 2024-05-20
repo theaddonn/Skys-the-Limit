@@ -1,0 +1,53 @@
+cmake_minimum_required(VERSION 3.12)
+
+# Mod Options
+project(Amethyst-Template CXX ASM_NASM)
+set(MOD_VERSION "0.1.0")
+set(MOD_AUTHOR "FrederoxDev")
+
+# Amethyst Minecraft Folder
+set(AmethystFolder "$ENV{localappdata}/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/AC/Amethyst/")
+
+# Configure to build within the Amethyst Folder
+configure_file(mod.json.in "${AmethystFolder}/mods/${PROJECT_NAME}@${MOD_VERSION}/mod.json" @ONLY)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO "${AmethystFolder}/mods/${PROJECT_NAME}@${MOD_VERSION}")
+
+# Define only RelWithDebInfo as the available build configuration
+set(CMAKE_CXX_STANDARD 23)
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set(CMAKE_CONFIGURATION_TYPES "RelWithDebInfo" CACHE STRING "Build configurations" FORCE)
+set(CMAKE_BUILD_TYPE "RelWithDebInfo" CACHE STRING "Choose the type of build, options are: RelWithDebInfo" FORCE)
+
+# Project Files
+file(GLOB_RECURSE ${PROJECT_NAME}_All
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.asm
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.h
+)
+
+add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_All})
+
+# Pass mod options to the source code
+target_compile_definitions(${PROJECT_NAME} PRIVATE MOD_VERSION="${MOD_VERSION}")
+target_compile_definitions(${PROJECT_NAME} PRIVATE MOD_AUTHOR="${MOD_AUTHOR}")
+target_compile_definitions(${PROJECT_NAME} PRIVATE MOD_NAME="${PROJECT_NAME}")
+
+# Link libraries
+target_link_libraries(${PROJECT_NAME} PRIVATE
+        AmethystAPI
+        libhat
+        $ENV{amethyst_src}/AmethystAPI/lib/fmt.lib
+)
+
+# Enable multi processor compilation for C++, to make it go brrrrrr
+target_compile_options(${PROJECT_NAME} PRIVATE
+        $<$<COMPILE_LANGUAGE:CXX>:/MP>
+)
+
+# EnTT Config Options
+target_compile_definitions(${PROJECT_NAME} PUBLIC ENTT_PACKED_PAGE=128)
+
+# Get the AmethystAPI Lib
+add_subdirectory("$ENV{amethyst_src}/AmethystAPI" "build")
