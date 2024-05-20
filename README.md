@@ -1,6 +1,6 @@
 # Sky's the limit
 
-A really, really simple Minecraft Bedrock mod to increase the 
+A really, really simple Minecraft Bedrock mod that increases the 
 maximum build limit in all dimensions to 2048 blocks.
 
 ## Examples
