@@ -4,7 +4,7 @@
 A really, really simple Minecraft Bedrock mod that increases the 
 maximum build limit in all dimensions to 2048 blocks.
 
-## Examples
+## Showcase
 | ![image](https://github.com/Adrian8115/Skys-the-Limit/blob/8c60833de0e20860e36b4e2212be04bc5bb813cf/assets/img1.png) | ![image](https://github.com/Adrian8115/Skys-the-Limit/blob/8c60833de0e20860e36b4e2212be04bc5bb813cf/assets/img2.png) | ![image](https://github.com/Adrian8115/Skys-the-Limit/blob/8c60833de0e20860e36b4e2212be04bc5bb813cf/assets/img3.png) |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 
