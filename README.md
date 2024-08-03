@@ -11,12 +11,9 @@ maximum build limit in all dimensions to 2048 blocks.
 ## Working Versions
 | Working | Version | Note                                             |
 |---------|---------|--------------------------------------------------|
+| Yes     | 1.21.22 | -                                                |
+| Yes     | 1.21.13 | -                                                |
 | Yes     | 1.21.03 | Current officially supported version of Amethyst |
-| Yes     | 1.20.81 | -                                                |
-| Yes     | 1.20.80 | -                                                |
-| Yes     | 1.20.73 | -                                                |
-| Yes     | 1.20.72 | -                                                |
-| Yes     | 1.20.71 | -                                                |
 
 ## Credit
 All credit basically go to `duckos_mods`,
