@@ -8,12 +8,12 @@ maximum build limit in all dimensions to 2048 blocks.
 | ![image](https://github.com/Adrian8115/Skys-the-Limit/blob/8c60833de0e20860e36b4e2212be04bc5bb813cf/assets/img1.png) | ![image](https://github.com/Adrian8115/Skys-the-Limit/blob/8c60833de0e20860e36b4e2212be04bc5bb813cf/assets/img2.png) | ![image](https://github.com/Adrian8115/Skys-the-Limit/blob/8c60833de0e20860e36b4e2212be04bc5bb813cf/assets/img3.png) |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 
-## Working Versions
-| Working | Version | Note                                             |
-|---------|---------|--------------------------------------------------|
-| Yes     | 1.21.22 | -                                                |
-| Yes     | 1.21.13 | -                                                |
-| Yes     | 1.21.03 | Current officially supported version of Amethyst |
+## Supported Versions
+| Supported | Version | Note                                             |
+|-----------|---------|--------------------------------------------------|
+| Yes       | 1.21.22 | -                                                |
+| Yes       | 1.21.13 | -                                                |
+| Yes       | 1.21.03 | Current officially supported version of Amethyst |
 
 ## Credit
 All credit basically go to `duckos_mods`,
